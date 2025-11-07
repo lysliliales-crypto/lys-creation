@@ -1,2 +1,2 @@
-# lys-liliales
+# lys-creation
 Lys liliales — feminine and delicate creations: frames, stickers &amp; personalized gifts inspired by the elegance of lilies. 🌸
