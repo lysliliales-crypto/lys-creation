@@ -11,17 +11,17 @@
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #ffe6f2 0%, #fff8fb 100%);
+      background: linear-gradient(180deg, #ffeaf2 0%, #fff6fa 100%);
       overflow-x: hidden;
       text-align: center;
-      animation: fadeIn 2s ease-in;
+      animation: fadeIn 1.5s ease-in;
       position: relative;
       min-height: 100vh;
     }
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 60px;
+      font-size: 65px;
       color: #d84f87;
       margin-top: 100px;
       animation: float 4s ease-in-out infinite;
@@ -31,7 +31,7 @@
       font-size: 18px;
       color: #b45a7e;
       margin-top: -10px;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
 
     .links {
@@ -50,6 +50,7 @@
       font-weight: bold;
       transition: 0.3s;
       box-shadow: 0 4px 10px rgba(216, 79, 135, 0.2);
+      font-size: 16px;
     }
 
     .links a:hover {
@@ -58,24 +59,22 @@
       box-shadow: 0 6px 15px rgba(216, 79, 135, 0.3);
     }
 
-    /* 🌸 زهور الزنبق */
     .flower {
       position: absolute;
-      width: 200px;
-      opacity: 0.85;
-      animation: float 5s ease-in-out infinite;
+      width: 180px;
+      opacity: 0.95;
+      animation: sway 6s ease-in-out infinite;
     }
 
-    .flower.left {
-      left: -40px;
-      top: 30%;
-      transform: rotate(-5deg);
+    .left {
+      left: 0;
+      bottom: 0;
     }
 
-    .flower.right {
-      right: -40px;
-      top: 30%;
-      transform: rotate(5deg);
+    .right {
+      right: 0;
+      bottom: 0;
+      transform: scaleX(-1);
     }
 
     @keyframes fadeIn {
@@ -85,11 +84,16 @@
 
     @keyframes float {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes sway {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
     }
 
     footer {
-      margin-top: 80px;
+      margin-top: 70px;
       font-size: 14px;
       color: #c07296;
       opacity: 0.8;
@@ -98,13 +102,15 @@
 </head>
 <body>
 
-  <!-- 🌸 زهور الجوانب -->
-  <img src="https://i.imgur.com/wJrkrKw.png" alt="Lys Flower Left" class="flower left">
-  <img src="https://i.imgur.com/wJrkrKw.png" alt="Lys Flower Right" class="flower right">
+  <!-- زهور الزنبق -->
+  <img src="https://i.imgur.com/E7dAxhK.png" alt="Lys Flower Left" class="flower left">
+  <img src="https://i.imgur.com/E7dAxhK.png" alt="Lys Flower Right" class="flower right">
 
+  <!-- العنوان -->
   <h1>Lys Liliales</h1>
   <p>Créations de cadres, stickers & cadeaux personnalisés</p>
 
+  <!-- الروابط -->
   <div class="links">
     <a href="https://www.facebook.com/share/1J3rsf5M64/" target="_blank">Facebook</a>
     <a href="https://www.instagram.com/creation.de.lys?igsh=MXcxNHcyYjEzZGhoZw==" target="_blank">Instagram</a>
@@ -115,5 +121,6 @@
 
 </body>
 </html>
+
 
 
