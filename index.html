@@ -3,125 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lys Liliales</title>
+  <title>Lys creation</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
     body {
       margin: 0;
-      height: 100vh;
-      background: linear-gradient(180deg, #ffe6f0, #fff);
-      overflow: hidden;
+      font-family: "Poppins", cursive;
+      background: linear-gradient(180deg, #ffd9e8 0%, #ffe6f2 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      font-family: 'Great Vibes', cursive;
-    }
-
-    /* زهرة الزنبق العلوية */
-    .lily {
-      position: absolute;
-      top: 0;
-      width: 300px;
-      opacity: 0.8;
-      animation: float 8s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(10px); }
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
     }
 
     h1 {
-      margin-top: 160px;
-      font-size: 60px;
-      color: #d474a2;
-      text-shadow: 1px 1px 4px #f3d1e5;
-      animation: fadeIn 2s ease;
+      font-family: "Great Vibes", cursive;
+      font-size: 4rem;
+      color: #d63384;
+      text-shadow: 1px 1px 4px #fff;
+      z-index: 2;
+      animation: fadeInDown 2s ease;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .flower-bg {
+      position: absolute;
+      top: -50px;
+      width: 400px;
+      opacity: 0.3;
+      z-index: 1;
+      animation: float 6s ease-in-out infinite;
     }
 
     .links {
       display: flex;
-      gap: 25px;
-      margin-top: 40px;
-      animation: fadeIn 3s ease;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      z-index: 2;
+      animation: fadeInUp 2s ease;
     }
 
-    .flower-btn {
-      background: #f8b8d8;
-      border: none;
-      border-radius: 50%;
-      width: 90px;
-      height: 90px;
+    .link-btn {
+      background-color: #ffb6c1;
       color: white;
-      font-size: 16px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      position: relative;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .flower-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
-
-    /* بتلات زهرية حول الأزرار */
-    .flower-btn::before, .flower-btn::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background: #ffd6e8;
-      width: 20px;
-      height: 20px;
-      top: -10px;
-      left: 35px;
-      box-shadow: 25px 25px #ffd6e8, -25px 25px #ffd6e8, 25px -25px #ffd6e8, -25px -25px #ffd6e8;
-      z-index: -1;
+      border: none;
+      padding: 12px 40px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      text-decoration: none;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4);
     }
 
-    .flower-btn:hover::before {
-      transform: rotate(20deg);
+    .link-btn:hover {
+      background-color: #ff94af;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(255, 182, 193, 0.6);
     }
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      color: #d6a0b9;
-      font-size: 18px;
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
     }
 
-    /* كادرات وستيكرات جانبية */
-    .decor {
-      position: absolute;
-      opacity: 0.4;
-      animation: float 10s ease-in-out infinite;
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    .decor.left { left: 20px; bottom: 50px; width: 120px; }
-    .decor.right { right: 20px; top: 100px; width: 130px; }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-  <img class="lily" src="https://i.imgur.com/rycM6i7.png" alt="Lys flower" />
-  <h1>Lys Liliales</h1>
-
+  <img class="flower-bg" src="https://cdn.pixabay.com/photo/2020/04/20/18/37/lily-5067884_1280.png" alt="Fleur de lys rose" />
+  <h1>Lys creation</h1>
   <div class="links">
-    <a href="https://www.facebook.com/share/1J3rsf5M64/" target="_blank"><button class="flower-btn">FB</button></a>
-    <a href="https://www.instagram.com/creation.de.lys?igsh=MXcxNHcyYjEzZGhoZw==" target="_blank"><button class="flower-btn">IG</button></a>
-    <a href="https://tiktok.com/@lyscreation03" target="_blank"><button class="flower-btn">TT</button></a>
+    <a class="link-btn" href="https://www.facebook.com/share/1J3rsf5M64/" target="_blank">Facebook</a>
+    <a class="link-btn" href="https://www.instagram.com/creation.de.lys?igsh=MXcxNHcyYjEzZGhoZw==" target="_blank">Instagram</a>
+    <a class="link-btn" href="https://tiktok.com/@lyscreation03" target="_blank">TikTok</a>
   </div>
-
-  <img class="decor left" src="https://i.imgur.com/qI5Uu8q.png" alt="cadre décoratif">
-  <img class="decor right" src="https://i.imgur.com/qI5Uu8q.png" alt="sticker décoratif">
-
-  <footer>🌸 Création artistique & douce – Lys Liliales 🌸</footer>
 </body>
 </html>
 
