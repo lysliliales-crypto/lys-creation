@@ -10,7 +10,7 @@
 
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(180deg, #ffeaf3, #fffafc);
       display: flex;
       flex-direction: column;
@@ -18,27 +18,31 @@
       justify-content: flex-start;
       font-family: 'Poppins', sans-serif;
       overflow-x: hidden;
+      position: relative;
     }
 
+    /* زهرة الزنبق */
     .lily {
       position: absolute;
-      top: 0;
-      width: 250px;
-      opacity: 0.7;
+      top: 10px;
+      width: 200px;
+      opacity: 0.9;
       animation: float 8s ease-in-out infinite;
+      pointer-events: none;
     }
 
     @keyframes float {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(10px); }
+      50% { transform: translateY(8px); }
     }
 
+    /* العنوان */
     h1 {
-      margin-top: 160px;
-      font-size: 60px;
+      margin-top: 180px;
+      font-size: 65px;
       font-family: 'Great Vibes', cursive;
       color: #d474a2;
-      text-shadow: 1px 1px 5px #f3d1e5;
+      text-shadow: 2px 2px 8px #f3d1e5;
       animation: fadeIn 2s ease;
     }
 
@@ -57,6 +61,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* الروابط */
     .links {
       display: flex;
       gap: 25px;
@@ -68,14 +73,15 @@
       background: #f8b8d8;
       border: 2px solid #f1d6e4;
       border-radius: 50%;
-      width: 90px;
-      height: 90px;
+      width: 85px;
+      height: 85px;
       color: white;
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 28px;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -92,25 +98,31 @@
       text-align: center;
     }
   </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <img class="lily" src="https://i.imgur.com/rycM6i7.png" alt="Lys flower" />
+  <!-- زهرة الزنبق -->
+  <img class="lily" src="https://cdn.pixabay.com/photo/2017/07/26/22/56/lily-2541048_1280.png" alt="Lys flower" />
+
+  <!-- العنوان -->
   <h1>Lys creation</h1>
 
+  <!-- فقرة تعريف -->
   <div class="intro">
     Création de cadres, stickers et décorations personnalisées — 
     inspirées par la délicatesse des fleurs de lys 🌸
   </div>
 
+  <!-- روابط -->
   <div class="links">
     <a href="https://www.facebook.com/share/1J3rsf5M64/" target="_blank">
-      <button class="flower-btn">📘</button>
+      <button class="flower-btn"><i class="fab fa-facebook-f"></i></button>
     </a>
     <a href="https://www.instagram.com/creation.de.lys?igsh=MXcxNHcyYjEzZGhoZw==" target="_blank">
-      <button class="flower-btn">📸</button>
+      <button class="flower-btn"><i class="fab fa-instagram"></i></button>
     </a>
     <a href="https://tiktok.com/@lyscreation03" target="_blank">
-      <button class="flower-btn">🎵</button>
+      <button class="flower-btn"><i class="fab fa-tiktok"></i></button>
     </a>
   </div>
 
@@ -118,9 +130,5 @@
 </body>
 </html>
 
-
-
-
-      
 
 
