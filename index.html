@@ -3,96 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lys creation</title>
+  <title> 🌸 welcome to Lys Liliales🌸</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap');
 
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(180deg, #ffe4ef, #fffafc);
+      background: linear-gradient(135deg, #ffe6f1, #fff9fc);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: 'Poppins', sans-serif;
-      color: #b35484;
+      font-family: 'Quicksand', sans-serif;
+      color: #a63c75;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      border: 3px solid #f7b8d8;
+      border-radius: 30px;
+      padding: 50px;
+      max-width: 450px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1.5s ease;
     }
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 64px;
+      font-size: 60px;
       color: #d46aa0;
-      margin: 0;
-      text-shadow: 1px 1px 6px #f3cce2;
+      margin-bottom: 15px;
     }
 
     p {
-      font-size: 18px;
-      text-align: center;
-      margin: 20px 0 40px;
-      max-width: 400px;
-      color: #9b4c74;
+      font-size: 17px;
+      color: #8f4a73;
+      margin-bottom: 40px;
     }
 
-    .links {
+    .social-links {
       display: flex;
+      justify-content: center;
       gap: 25px;
     }
 
-    .icon-btn {
-      width: 60px;
-      height: 60px;
+    .social-links a {
+      width: 55px;
+      height: 55px;
+      background: linear-gradient(145deg, #f8bcd9, #f59fc6);
       border-radius: 50%;
-      background-color: #f7b8d8;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 26px;
+      font-size: 25px;
       color: white;
-      border: none;
-      cursor: pointer;
+      text-decoration: none;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .icon-btn:hover {
+    .social-links a:hover {
       transform: scale(1.1);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-      background-color: #f59fc6;
+      box-shadow: 0 5px 15px rgba(213, 111, 157, 0.4);
     }
 
     footer {
-      position: absolute;
-      bottom: 15px;
-      color: #b7779e;
+      margin-top: 30px;
       font-size: 14px;
+      color: #b67891;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <h1>Lys creation</h1>
+  <div class="container">
+    <h1>Lys creation</h1>
+    <p>Créations artisanales de cadres, stickers et décorations personnalisées inspirées par la délicatesse des fleurs 🌸</p>
 
-  <p>Création de cadres, stickers et décorations personnalisées inspirées par la beauté des fleurs 🌸</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1J3rsf5M64/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/creation.de.lys?igsh=MXcxNHcyYjEzZGhoZw==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@lyscreation03" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
 
-  <div class="links">
-    <a href="https://www.facebook.com/share/1J3rsf5M64/" target="_blank">
-      <button class="icon-btn"><i class="fab fa-facebook-f"></i></button>
-    </a>
-    <a href="https://www.instagram.com/creation.de.lys?igsh=MXcxNHcyYjEzZGhoZw==" target="_blank">
-      <button class="icon-btn"><i class="fab fa-instagram"></i></button>
-    </a>
-    <a href="https://tiktok.com/@lyscreation03" target="_blank">
-      <button class="icon-btn"><i class="fab fa-tiktok"></i></button>
-    </a>
+    <footer>✨🌸 Fait avec amour – Lys creation 🌸✨</footer>
   </div>
-
-  <footer>✨ Fait avec amour – Lys creation ✨</footer>
 
 </body>
 </html>
+
 
 
 
